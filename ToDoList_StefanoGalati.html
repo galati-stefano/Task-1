@@ -1,5 +1,26 @@
+<!DOCTYPE html>
 <html>
-<body>
-  <p>Branch Test</p>
-</body>
+    <head>
+        <title>Miao</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>To do list</h1>
+        <div>
+            <input type="text" name="item" id="inputText">
+            <input type="button" name="exe" id="storeText" value="Add item" onclick="newRow()">
+            <script>
+                function newRow(){
+                    let inputText = document.getElementById("inputText");
+                    let text = inputText.value;
+                    inputText.value = "";
+                    var line = document.createElement("p");
+                    line.innerHTML = text;
+                    let box = document.getElementById("box");
+                    box.appendChild(line);
+                }
+            </script>
+            <div id="box"></div>
+        </div>
+    </body>
 </html>
