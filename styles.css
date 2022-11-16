@@ -7,37 +7,68 @@ h1{
 div{
     text-align: center;
 }
+
+#stylingBox{
+    height: 4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 #inputText{
     width: 300px;
-    height: 30px;
+    height:90%;
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 #storeText{
-    height: 30px;
+    height: 100%;
     width: 100px;
     text-align: center;
+    background-color: #fff;
+    color: rgb(0, 138, 138);
+    border-color:aqua;
 }
 
 #box{
+    width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: center;
 }
 
 .boxRow{
-    width: 30%;
-    height: 2em;
+    width:100%;
+    height: 5em;
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+    vertical-align: middle;
 }
 
 .textRow{
-    display: inline;
+    min-width: 30%;
+    padding: 0.8em 2%;
+    width: min-content;
+    text-align: center;
+
+}
+
+.boxForButtons{
+    width: 300px;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    vertical-align: middle
 }
 
 .buttonRow{
-    margin: auto;
+    
 }
 
 .buttonRow.col1{
@@ -57,4 +88,12 @@ div{
 
 #deleteAll{
     margin:50px;
+    height: 3em;
+    width: 10em;
+    text-align: center;
+    background-color: #fff;
+    color: rgb(0, 138, 138);
+    border-color:aqua;
 }
+
+
