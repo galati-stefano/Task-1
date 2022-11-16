@@ -9,18 +9,10 @@
         <div>
             <input type="text" name="item" id="inputText">
             <input type="button" name="exe" id="storeText" value="Add item" onclick="newRow()">
-            <script>
-                function newRow(){
-                    let inputText = document.getElementById("inputText");
-                    let text = inputText.value;
-                    inputText.value = "";
-                    var line = document.createElement("p");
-                    line.innerHTML = text;
-                    let box = document.getElementById("box");
-                    box.appendChild(line);
-                }
-            </script>
             <div id="box"></div>
+            <input type="button" name="deleteAll" id="deleteAll" value="Clear Items" onclick="clearItems()">
         </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
