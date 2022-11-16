@@ -18,3 +18,43 @@ div{
     width: 100px;
     text-align: center;
 }
+
+#box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxRow{
+    width: 30%;
+    height: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.textRow{
+    display: inline;
+}
+
+.buttonRow{
+    margin: auto;
+}
+
+.buttonRow.col1{
+    background-color: rgb(255, 0, 0);    
+}
+
+.buttonRow.col2{
+    background-color: yellow;
+}
+
+.buttonRow.col1:active{
+    background-color: rgb(100,0,0);
+}
+.buttonRow.col2:active{
+    background-color: rgb(100,100,0);
+}
+
+#deleteAll{
+    margin:50px;
+}
