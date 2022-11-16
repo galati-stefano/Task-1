@@ -39,11 +39,22 @@ function newRow(){
         checkBox3.classList.add("checkBox");
         checkBox3.onclick = function(){taskCompleted(line, checkBox3)};
         
+        var boxForButtons = document.createElement("div");
+        boxForButtons.className = "boxForButtons";
 
+        box.appendChild(line);
+
+        boxForButtons.appendChild(button1);
+        boxForButtons.appendChild(button2);   
+        boxForButtons.appendChild(checkBox3);
+        box.appendChild(boxForButtons);
+        
+        /*
         box.appendChild(line);
         box.appendChild(button1);
         box.appendChild(button2);
         box.appendChild(checkBox3);
+        */
 
         bigBox.appendChild(box);
     }
@@ -93,9 +104,3 @@ function clearItems(){
         bigBox.removeChild(bigBox.children[0]);
     }
 }
-
-
-
-//avoid empty entry
-//checkBox  V
-//align better  
