@@ -1,3 +1,4 @@
+//bau
 function newRow(){
     let inputText = document.getElementById("inputText");
     //read text
